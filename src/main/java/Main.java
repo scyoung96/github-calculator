@@ -11,7 +11,7 @@ public class Main {
             if (command.equals("quit") || command.equals("exit")) {
                 break;
             }
-            
+
             if (command.equals("add")) {
                 int a = scanner.nextInt();
                 int b = scanner.nextInt();
@@ -32,11 +32,11 @@ public class Main {
                 int b = scanner.nextInt();
                 int result = calculator.divide(a, b);
                 System.out.println(result);
-            } else if (command.equals("fibonacciNumberFinder")) {
+            } else if (command.equals("fibonacci")) {
                 int n = scanner.nextInt();
                 int result = calculator.fibonacciNumberFinder(n);
                 System.out.println(result);
-            } else if (command.equals("intToBinaryNumber")) {
+            } else if (command.equals("binary")) {
                 int number = scanner.nextInt();
                 String result = calculator.intToBinaryNumber(number);
                 System.out.println(result);
