@@ -38,9 +38,19 @@ class Calculator {
     etc
      */
     int fibonacciNumberFinder(int n){
-        return 0;
+        int fibNum = 0;
+        int fibNumPrev = 1;
+        int fibNumPrevPrev = 0;
+        
+        for (int i = 1; i <= n; i++) {
+            fibNum = fibNumPrev + fibNumPrevPrev;
+            fibNumPrevPrev = fibNumPrev;
+            fibNumPrev = fibNum;
+        }
+        
+        return fibNum;
     }
-
+            
 
     /*
     Returns binary value of the given int number
